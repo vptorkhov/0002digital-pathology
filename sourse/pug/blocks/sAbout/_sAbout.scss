@@ -42,14 +42,8 @@
 	z-index: -1;
 	width: rem(368);
 	height: rem(395);
-	@include media-breakpoint-down(xl) {
-		right: -120px;
-	}
-	@include media-breakpoint-down(md) {
-		right: -80px;
-	}
-	@include media-breakpoint-down(sm) {
-		right: -150px;
+	@include media-breakpoint-down(xl){
+		right: 0;
 	}
 	img {
 		object-fit: cover;
@@ -60,6 +54,27 @@
 		left: 0;
 		content: "";
 		width: rem(368);
+		height: rem(395);
+		background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+	}
+}
+.back-1-small{
+	position: absolute;
+	top: rem(72);
+	right: 0;
+	opacity: 0.9;
+	z-index: -1;
+	width: rem(182);
+	height: rem(395);
+	img {
+		object-fit: cover;
+	}
+	&::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: "";
+		width: rem(182);
 		height: rem(395);
 		background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
 	}
