@@ -1,0 +1,96 @@
+// start .sAbout
+.sAbout {
+	position: relative;
+	z-index: 10;
+	--sPT: #{rem(68)};
+	--sPB: #{rem(61)};
+	--sTPB: #{rem(53)};
+	&__title {
+		font-size: $large;
+		line-height: rem(21.5);
+		letter-spacing: 0.4px;
+		padding-bottom: rem(27);
+	}
+	&__caption {
+		letter-spacing: 0.15px;
+		line-height: rem(21.5);
+		span {
+			color: #1c8fc9;
+		}
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sAbout
+
+.back-1 {
+	position: absolute;
+	top: rem(72);
+	right: rem(67);
+	opacity: 0.9;
+	z-index: -1;
+	width: rem(368);
+	height: rem(395);
+	@include media-breakpoint-down(xl) {
+		right: -120px;
+	}
+	@include media-breakpoint-down(md) {
+		right: -80px;
+	}
+	@include media-breakpoint-down(sm) {
+		right: -150px;
+	}
+	img {
+		object-fit: cover;
+	}
+	&::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: "";
+		width: rem(368);
+		height: rem(395);
+		background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+	}
+}
+.back-2 {
+	position: absolute;
+	top: rem(321);
+	left: 0;
+	opacity: 0.9;
+	z-index: -1;
+	width: rem(716);
+	height: rem(913);
+	@include media-breakpoint-down(xl) {
+		left: -160px;
+	}
+	@include media-breakpoint-down(md) {
+		left: -140px;
+	}
+	@include media-breakpoint-down(sm) {
+		left: -275px;
+	}
+	img {
+		object-fit: cover;
+	}
+	&::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: "";
+		width: rem(716);
+		height: rem(913);
+		background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+	}
+}

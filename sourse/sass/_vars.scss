@@ -1,6 +1,7 @@
-$rfs-rem-value: 16 !default;
-$em-base: $rfs-rem-value * 1px;
+$rfs-rem-value: 23;
+$em-base: 15px;
 $small: rem(14);
+$large: rem(22);
 $url: '../img/';
 $path2: '@2x/';
 $path1: '@1x/';
@@ -91,12 +92,12 @@ $colors: ("blue": $blue,
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary: $blue !default;
+$primary: #1c8fc9;
 $secondary: $gray-600 !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
-$danger: $red !default;
+$danger: #c16fd1;
 $light: $gray-100 !default;
 $dark: $gray-900 !default;
 // scss-docs-end theme-color-variables
@@ -207,7 +208,7 @@ $position-values: (0: 0,
 // Settings for the `<body>` element.
 
 $body-bg: $white !default;
-$body-color: $gray-900 !default;
+$body-color: #000000;
 $body-text-align: null !default;
 
 // Utilities maps
@@ -272,11 +273,11 @@ $grid-breakpoints: (xs: 0,
 // Define the maximum width of `.container` for different screen sizes.
 
 // scss-docs-start container-max-widths
-$container-max-widths: (sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px) !default;
+$container-max-widths: (sm: 441px,
+  md: 600px,
+  lg: 800px,
+  xl: 1000px,
+  xxl: 1173px) !default;
 // scss-docs-end container-max-widths
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
@@ -400,8 +401,8 @@ $line-height-base: 1.5 !default;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
+$h1-font-size: rem(38);
+$h2-font-size: rem(23);
 $h3-font-size: $font-size-base * 1.75 !default;
 $h4-font-size: $font-size-base * 1.5 !default;
 $h5-font-size: $font-size-base * 1.25 !default;
