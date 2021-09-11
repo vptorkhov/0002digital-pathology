@@ -4,13 +4,14 @@ extends layout/main.pug
 include ../blocks/sContent/_sContent.pug
 include ../blocks/sContact/_sContact.pug
 include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sCourse/_sCourse.pug
 
 block variables
 	- let  mainPage= 'main-page'
 	- let  bg= 'main.jpg'
 
 block title
-	- let  title= 'title'
+	- let  title= 'Digital Pathology'
 	title= title
 block pagecontent 
 	//- a.btn.bnt-primary.link-modal-js(href="#modal-call") sadasdsa 
@@ -23,6 +24,7 @@ block pagecontent
 	//- +topLine()
 	//- +headerBlock()
 	+sAbout()
+	+sCourse()
 	//- +sForm()
 	//- +sContact()
 	+footer()
