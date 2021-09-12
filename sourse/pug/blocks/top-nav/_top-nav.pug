@@ -17,12 +17,13 @@
 mixin top-nav() 
 	// start top-nav
 	+b.top-nav.block-with-lazy
-		+e.menu
-			+e.link(href="#") About training center
-			+e.link(href="#") Course content
-			+e.link--mini(href="#") Management Diagnostic
-			+e.link(href="#") About the lecturers:
-			+e.link(href="#") To take a course
+		.container--menu.container
+			+e.menu
+				+e.link(href="#") About training center
+				+e.link(href="#") Course content
+				+e.link--mini(href="#") Management Diagnostic
+				+e.link(href="#") About the lecturers:
+				+e.link(href="#") To take a course
 		.container
 			.row
 				+e.menu-wrap.col-sm-auto.col-12

@@ -5,6 +5,55 @@
 	--sPT: #{rem(66)};
 	--sPB: #{rem(41)};
 	// --sTPB: ;
+	.back-4 {
+		position: absolute;
+		top: 150px;
+		left: 0;
+		opacity: 0.9;
+		z-index: -1;
+		width: rem(576);
+		height: rem(633);
+		@include media-breakpoint-down(xl) {
+			left: 0;
+		}
+		@include media-breakpoint-down(md){
+			top: 700px;
+		}
+		img {
+			object-fit: cover;
+			height: 100%;
+		}
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			width: rem(368);
+			height: rem(395);
+			background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+		}
+	}
+	.back-4-small {
+		position: absolute;
+		top: 150px;
+		left: 0;
+		opacity: 0.9;
+		z-index: -1;
+		width: rem(182);
+		height: rem(395);
+		img {
+			object-fit: cover;
+		}
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			width: rem(182);
+			height: rem(395);
+			background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+		}
+	}
 	.info-1 {
 		position: relative;
 		@include media-breakpoint-up(md) {

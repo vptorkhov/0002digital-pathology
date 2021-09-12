@@ -12,6 +12,16 @@
 			padding-left: 0;
 			padding-right: 0;
 		}
+		&--menu{
+			@include media-breakpoint-up(md){
+				position: relative;
+			}
+			@include media-breakpoint-down(md){
+				width: 100%;
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
 	}
 	&__link {
 		display: block;
@@ -96,15 +106,16 @@
 	}
 	&__menu {
 		position: absolute;
+		
 		@include media-breakpoint-up(md) {
-			top: rem(66);
-			left: rem(10);
 			height: rem(268);
 			width: rem(338);
 		}
-		top: 127px;
-		left: auto;
-		right: 0;
+		@include media-breakpoint-down(md){
+			top: 127px;
+		}
+		top:rem(77);
+		left: 0;
 		height: rem(268);
 		width: 100vw;
 		padding-top: rem(30);
