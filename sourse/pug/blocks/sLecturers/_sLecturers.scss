@@ -98,34 +98,6 @@
 			margin-bottom: 40px;
 		}
 		position: relative;
-		&::before{
-			@include media-breakpoint-down(sm){
-				@include mt;
-				content:'';
-				position: absolute;
-				top: 0;
-				opacity: 1;
-				left: 0;
-				width: 62vw;
-				height: 71vw;
-				background-size: cover;
-				display: block;
-			}
-		}
-		&::after{
-			@include media-breakpoint-down(sm){
-				@include mt;
-				content:'';
-				position: absolute;
-				top: 0;
-				opacity: 0;
-				left: 0;
-				width: 62vw;
-				height: 71vw;
-				background-size: cover;
-				display: block;
-			}
-		}
 		&:hover{
 			&::before{
 				opacity: 0;
@@ -212,6 +184,34 @@
 		}
 	}
 	.pic{
+		&::before{
+			@include media-breakpoint-down(sm){
+				@include mt;
+				content:'';
+				position: absolute;
+				top: 0;
+				opacity: 1;
+				left: 0;
+				width: 62vw;
+				height: 71vw;
+				background-size: cover;
+				display: block;
+			}
+		}
+		&::after{
+			@include media-breakpoint-down(sm){
+				@include mt;
+				content:'';
+				position: absolute;
+				top: 0;
+				opacity: 0;
+				left: 0;
+				width: 62vw;
+				height: 71vw;
+				background-size: cover;
+				display: block;
+			}
+		}
 		&-1{
 			@include media-breakpoint-down(xl){
 				margin-top: -542px;
@@ -369,6 +369,7 @@
 		}
 		&::after {
 			position: absolute;
+			padding: 0;
 			top: 0;
 			left: 0;
 			content: "";
@@ -379,11 +380,12 @@
 	}
 	.back-4-small {
 		position: absolute;
-		top: 1000px;
+		padding: 0;
+		top: 900px;
 		right: 0;
 		opacity: 0.9;
 		z-index: -1;
-		width: rem(182);
+		width: rem(222);
 		height: rem(395);
 		img {
 			object-fit: cover;
@@ -393,7 +395,7 @@
 			top: 0;
 			left: 0;
 			content: "";
-			width: rem(182);
+			width: rem(222);
 			height: rem(395);
 			background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
 		}
