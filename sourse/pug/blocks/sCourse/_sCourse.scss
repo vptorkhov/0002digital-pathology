@@ -11,6 +11,9 @@
 		@include media-breakpoint-up(lg){
 			@include block(1173, 967);
 		}
+		@include media-breakpoint-down(xl){
+			height: 875px;
+		}
 		@include media-breakpoint-down(lg){
 			height: 1810px;
 		}
@@ -77,7 +80,7 @@
 				width: rem(171);
 				height: rem(171);
 				border-radius: 50%;
-				background-color: #c16fd1;
+				background-color: $danger;
 				top: rem(70);
 				left: rem(70);
 				p {
@@ -140,7 +143,7 @@
 					width: rem(372);
 					color: #e6e6e6;
 					&:hover {
-						color: #c16fd1;
+						color: $danger;
 					}
 				}
 			}
@@ -162,7 +165,7 @@
 							width: 4px;
 							height: 4px;
 							border-radius: 50%;
-							background-color: #c16fd1;
+							background-color: $danger;
 						}
 					}
 				}
@@ -201,7 +204,7 @@
 				width: rem(171);
 				height: rem(171);
 				border-radius: 50%;
-				background-color: #c16fd1;
+				background-color: $danger;
 				top: rem(70);
 				left: rem(70);
 				p {
@@ -265,7 +268,7 @@
 					width: rem(372);
 					color: #e6e6e6;
 					&:hover {
-						color: #c16fd1;
+						color: $danger;
 					}
 				}
 			}
@@ -297,7 +300,7 @@
 							width: 4px;
 							height: 4px;
 							border-radius: 50%;
-							background-color: #c16fd1;
+							background-color: $danger;
 						}
 					}
 				}

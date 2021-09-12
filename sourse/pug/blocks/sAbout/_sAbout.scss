@@ -15,7 +15,7 @@
 		letter-spacing: 0.15px;
 		line-height: rem(21.5);
 		span {
-			color: #1c8fc9;
+			color: $primary;
 		}
 	}
 	@include media-breakpoint-up(xl) {

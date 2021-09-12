@@ -1,0 +1,38 @@
+mixin sLecturers(data)
+	// start sLecturers
+	+b.SECTION.sLecturers.section#sLecturers&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h1 About the lecturers:
+			.row
+				.col-xl-3.col-md-6.col-12
+					+e.card
+						.icon-wrap.d-none.d-sm-block
+							+icon('lecturers-1')
+						+pic('lecturers-1.png','',0).pic-1
+						.h2 Alexey Remez,<br />CEO UNIM
+						+e.caption The owner and the founder of UNIM&nbsp;&mdash; the first fully digital cash positive pathomorphological company in&nbsp;the world: TOP-5 rank&nbsp;in&nbsp;Russia medtech sector in 2020, TOP-10 Biotech Startups to&nbsp;Watch in&nbsp;Eastern Europe in 2021.
+				.col-xl-3.col-md-6.col-12
+					+e.card
+						.icon-wrap.d-none.d-sm-block
+							+icon('lecturers-2')
+						+pic('lecturers-2.png','',0).pic-2
+						.h2 Nikolay Kroman,<br />COO UNIM
+						+e.caption Creation of&nbsp;a&nbsp;distributed remote control management system, implementation of&nbsp;standards<br />and<br />scaling technologies in&nbsp;daily operations, support for 100-fold growth of&nbsp;diagnostics remotely.
+				.col-xl-3.col-md-6.col-12
+					+e.card
+						.icon-wrap.d-none.d-sm-block
+							+icon('lecturers-3')
+						+pic('lecturers-3.png','',0).pic-3
+						.h2 Mikhail Genis,<br />CSO UNIM
+						+e.caption Strategy projects support and development. Experienced in deployment of&nbsp;big projects and corporate governance.
+				.col-xl-3.col-md-6.col-12
+					+e.card
+						.icon-wrap.d-none.d-sm-block
+							+icon('lecturers-4')
+						+pic('lecturers-4.png','',0).pic-4
+						.h2 Maxim Untesco,<br />COO UNIM
+						+e.caption Head of&nbsp;the Medical Diagnostic Team, Medical Director, Consultant Cytopathologist at UNIM, Moscow, Russian Federation Consultant Pathologist and Medical Director at&nbsp;SmartPath SRL, Bergamo, Italy.<br />Consultant pathologist at Telemark Hospital, Skien, Norway Former Pathologist, Seriate &laquo;Bolognini&raquo; Hospital, Italy Former Pathologist at Bergamo &laquo;Papa Giovanni XXIII&raquo; Hospital, Italy
+		+pic('back-3.png','',0).back-4.d-md-block.d-none
+		+pic('back-3-small.png','',0).back-4-small.d-block.d-md-none
+	// end sLecturers

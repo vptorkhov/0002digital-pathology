@@ -1,0 +1,415 @@
+// start .sLecturers
+.sLecturers {
+	position: relative;
+	z-index: 15;
+	--sPT: #{rem(48)};
+	--sPB: #{rem(40)};
+	--sTPB: #{rem(83)};
+	.container {
+		@include media-breakpoint-up(xxl) {
+			width: 1100px;
+		}
+		@include media-breakpoint-down(sm) {
+			width: 58%;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.row > * {
+		position: relative;
+		@include media-breakpoint-up(xxl) {
+			&:nth-child(1) {
+				.icon {
+					margin-top: rem(-254);
+					margin-left: rem(-24);
+				}
+			}
+			&:nth-child(2) {
+				.icon {
+					margin-top: rem(-248);
+					margin-left: rem(-24);
+				}
+			}
+			&:nth-child(3) {
+				.icon {
+					margin-top: rem(-248);
+					margin-left: rem(-28);
+				}
+			}
+			&:nth-child(4) {
+				.icon {
+					margin-top: rem(-252);
+					margin-left: rem(-28);
+				}
+			}
+		}
+		.icon {
+			@include media-breakpoint-up(xl) {
+				margin-top: -195px;
+				margin-left: -19px;
+			}
+		}
+	}
+	.row {
+		@include media-breakpoint-up(sm) {
+			--bs-gutter-x: #{rem(95)};
+		}
+		--bs-gutter-y: 62px;
+	}
+	&__card {
+		--cardcolor: #{$primary};
+		--svgcolor:#e6e6e6;
+		&:hover {
+			--cardcolor: #{$danger};
+			--svgcolor: #{$danger};
+		}
+		.icon {
+			@include mt;
+			color:var(--svgcolor);
+			max-width: rem(257);
+			@include media-breakpoint-down(xl){
+				max-width: 420px;
+			}
+			@include media-breakpoint-down(lg){
+				max-width: 305px;
+			}
+			@include media-breakpoint-down(md){
+				max-width: none;
+			}
+			@include media-breakpoint-down(sm){
+				max-width: 108%;
+			}
+		}
+	}
+	picture {
+		@include media-breakpoint-up(xxl) {
+			margin-top: -500px;
+		}
+		@include media-breakpoint-up(xl) {
+			margin-top: -436px;
+		}
+		@include media-breakpoint-down(xl) {
+			padding: 5px;
+		}
+		@include media-breakpoint-down(md) {
+			padding: 15px;
+		}
+		@include media-breakpoint-down(sm){
+			margin-bottom: 40px;
+		}
+		position: relative;
+		&::before{
+			@include media-breakpoint-down(sm){
+				@include mt;
+				content:'';
+				position: absolute;
+				top: 0;
+				opacity: 1;
+				left: 0;
+				width: 62vw;
+				height: 71vw;
+				background-size: cover;
+				display: block;
+			}
+		}
+		&::after{
+			@include media-breakpoint-down(sm){
+				@include mt;
+				content:'';
+				position: absolute;
+				top: 0;
+				opacity: 0;
+				left: 0;
+				width: 62vw;
+				height: 71vw;
+				background-size: cover;
+				display: block;
+			}
+		}
+		&:hover{
+			&::before{
+				opacity: 0;
+			}
+			&::after{
+				opacity: 1;
+			}
+		}
+	}
+	.icon-lecturers{
+		&-1{
+			@include media-breakpoint-down(xl){
+				margin-top: -90px;
+				margin-left: -19px;
+			}
+			@include media-breakpoint-down(lg){
+				margin-top: -148px;
+				margin-left: -19px;
+			}
+			@include media-breakpoint-down(md){
+				margin-top: 0;
+				margin-left: -6px;
+			}
+			@include media-breakpoint-down(sm){
+				margin: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+		&-2{
+			@include media-breakpoint-down(xl){
+				margin-top: -78px;
+				margin-left: -19px;
+			}
+			@include media-breakpoint-down(lg){
+				margin-top: -138px;
+				margin-left: -19px;
+			}
+			@include media-breakpoint-down(md){
+				margin-top: 0;
+				margin-left: -6px;
+			}
+			@include media-breakpoint-down(sm){
+				margin-top: -90px;
+				margin-left: -6px;
+			}
+		}
+		&-3{
+			@include media-breakpoint-down(xl){
+				margin-top: -90px;
+				margin-left: -31px;
+			}
+			@include media-breakpoint-down(lg){
+				margin-top: -148px;
+				margin-left: -31px;
+			}
+			@include media-breakpoint-down(md){
+				margin-top: 0;
+				margin-left: -22px;
+			}
+			@include media-breakpoint-down(sm){
+				margin-top: -90px;
+				margin-left: -14px;
+			}
+		}
+		&-4{
+			@include media-breakpoint-down(xl){
+				margin-top: -102px;
+				margin-left: -31px;
+			}
+			@include media-breakpoint-down(lg){
+				margin-top: -158px;
+				margin-left: -31px;
+			}
+			@include media-breakpoint-down(md){
+				margin-top: 0;
+				margin-left: -22px;
+			}
+			@include media-breakpoint-down(sm){
+				margin-top: -90px;
+				margin-left: -14px;
+			}
+		}
+	}
+	.pic{
+		&-1{
+			@include media-breakpoint-down(xl){
+				margin-top: -542px;
+			}
+			@include media-breakpoint-down(lg){
+				margin-top: -480px;
+			}
+			@include media-breakpoint-down(md){
+				margin-top: -534px;
+			}
+			@include media-breakpoint-down(sm){
+				margin-top: 0
+			}
+			&::before{
+				@include media-breakpoint-down(sm){
+					background-image: url(../img/svg/lecturers-1-b.svg);
+					left: -4px;
+				}
+			}
+			&::after{
+				@include media-breakpoint-down(sm){
+					@include mt;
+					background-image: url(../img/svg/lecturers-1-a.svg);
+					left: -4px;
+				}
+			}
+		}
+		&-2{
+			@include media-breakpoint-down(xl){
+				margin-top: -554px;
+			}
+			@include media-breakpoint-down(lg){
+				margin-top: -490px;
+			}
+			@include media-breakpoint-down(md){
+				margin-top: -548px;
+			}
+			@include media-breakpoint-down(sm){
+				margin-top: 0
+			}
+			&::before{
+				@include media-breakpoint-down(sm){
+					background-image: url(../img/svg/lecturers-2-b.svg);
+					left: -4px;
+				}
+			}
+			&::after{
+				@include media-breakpoint-down(sm){
+					@include mt;
+					background-image: url(../img/svg/lecturers-2-a.svg);
+					left: -4px;
+				}
+			}
+		}
+		&-3{
+			@include media-breakpoint-down(xl){
+				margin-top: -554px;
+			}
+			@include media-breakpoint-down(lg){
+				margin-top: -490px;
+			}
+			@include media-breakpoint-down(md){
+				margin-top: -548px;
+			}
+			@include media-breakpoint-down(sm){
+				margin-top: 0
+			}
+			&::before{
+				@include media-breakpoint-down(sm){
+					background-image: url(../img/svg/lecturers-3-b.svg);
+					width: 62.3vw;
+					left: -11px;
+				}
+			}
+			&::after{
+				@include media-breakpoint-down(sm){
+					@include mt;
+					background-image: url(../img/svg/lecturers-3-a.svg);
+					width: 62.3vw;
+					left: -11px;
+				}
+			}
+		}
+		&-4{
+			@include media-breakpoint-down(xl){
+				margin-top: -542px;
+			}
+			@include media-breakpoint-down(lg){
+				margin-top: -480px;
+			}
+			@include media-breakpoint-down(md){
+				margin-top: -534px;
+			}
+			@include media-breakpoint-down(sm){
+				margin-top: 0
+			}
+			&::before{
+				@include media-breakpoint-down(sm){
+					background-image: url(../img/svg/lecturers-4-b.svg);
+					width: 62.3vw;
+					left: -11px;
+				}
+			}
+			&::after{
+				@include media-breakpoint-down(sm){
+					@include mt;
+					background-image: url(../img/svg/lecturers-4-a.svg);
+					width: 62.3vw;
+					left: -11px;
+				}
+			}
+		}
+	}
+	.h2 {
+		text-align: center;
+		padding-top: rem(54);
+		@include mt;
+		color: var(--cardcolor);
+		@include media-breakpoint-down(lg) {
+			padding-top: 50px;
+		}
+		@include media-breakpoint-down(sm){
+			padding-top: 0;
+		}
+	}
+	&__caption {
+		@include media-breakpoint-up(xl) {
+			margin-left: rem(-15);
+			width: 115%;
+		}
+		padding-top: rem(21);
+		@include media-breakpoint-down(lg) {
+			padding-bottom: 40px;
+		}
+		line-height: $large;
+		letter-spacing: 0.15px;
+	}
+	.back-4 {
+		position: absolute;
+		top: 1000px;
+		right: rem(67);
+		opacity: 0.9;
+		z-index: -1;
+		width: rem(415);
+		height: rem(446);
+		@include media-breakpoint-down(xl) {
+			right: 0;
+		}
+		@include media-breakpoint-down(md){
+			top: 1000px;
+		}
+		img {
+			object-fit: cover;
+			height: 100%;
+		}
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			width: rem(368);
+			height: rem(395);
+			background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+		}
+	}
+	.back-4-small {
+		position: absolute;
+		top: 1000px;
+		right: 0;
+		opacity: 0.9;
+		z-index: -1;
+		width: rem(182);
+		height: rem(395);
+		img {
+			object-fit: cover;
+		}
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: "";
+			width: rem(182);
+			height: rem(395);
+			background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+		}
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sLecturers
