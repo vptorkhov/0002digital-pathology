@@ -3,7 +3,15 @@ mixin sForm()
 	+b.SECTION.sForm.section#sForm&attributes(attributes)
 		.container
 			+b.section-title.text-center
-				h2 sForm
-				
-			.row
+				h2 To apply / to ask a question
+			+form-wrap
+				.row
+					.col-12.col-lg-4
+						+input('Name*:')
+						+input('Email*:','email')
+						+input('Phone*:','tel')
+					.col-12.col-lg-4
+						+input('Comments:','textarea')
+						+in-c('checkbox','To participate').check
+				+e.BUTTON.btn(type="submit") submit
 	// end sForm
