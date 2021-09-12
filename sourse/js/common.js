@@ -300,6 +300,11 @@ function eventHandler() {
 		document.body.insertAdjacentHTML("beforeend", `<div class="pixel-perfect" style="background-image: url(screen/${screenName});"></div>`);
 	}
 
+	$('.top-nav__menu-toggle').click(function(){
+			$(this).toggleClass('active')
+			$('.top-nav__menu').slideToggle();
+		}
+	);
 
 	function setFixedNav() {
 		let topNav = document.querySelector('.top-nav  ');

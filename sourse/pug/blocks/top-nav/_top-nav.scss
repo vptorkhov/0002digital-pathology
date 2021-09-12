@@ -1,3 +1,130 @@
 .top-nav {
-	
+	position: relative;
+	z-index: 25;
+	min-height: rem(77);
+	box-shadow: 0 0 21px rgba(0, 0, 0, 0.39);
+	@include media-breakpoint-down(md) {
+		padding-bottom: 10px;
+	}
+	.container {
+		@include media-breakpoint-down(sm) {
+			width: 70%;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	&__link {
+		display: block;
+		@include media-breakpoint-up(md) {
+			max-width: rem(230);
+		}
+		margin-bottom: rem(7);
+		font-size: $large;
+		color: $white !important;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+		&--mini {
+			font-size: rem(15);
+			@include media-breakpoint-up(md) {
+				width: 100px;
+				max-width: none;
+				word-wrap: break-word;
+			}
+		}
+	}
+	.row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		min-height: rem(77);
+	}
+	.col-link {
+		min-height: rem(50);
+	}
+	&__menu-ask {
+		border-radius: $large;
+		height: rem(44);
+		text-align: center;
+		padding-left: rem(32);
+		padding-right: rem(32);
+		padding-top: rem(12);
+		padding-bottom: rem(14);
+		background-image: linear-gradient(-143deg, $primary 0%, $danger 100%);
+		border: 0;
+		color: $white !important;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		@include media-breakpoint-down(md) {
+			max-width: 240px;
+			font-size: 3vw;
+			padding-top: 0;
+			padding-bottom: 0;
+			line-height: 44px;
+			height: 44px;
+			border-radius: 20px;
+		}
+		@include media-breakpoint-down(sm) {
+			max-width: none;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__menu-wrap {
+		position: relative;
+		display: flex;
+		align-items: center;
+		@include media-breakpoint-down(md) {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		@include media-breakpoint-down(sm) {
+			justify-content: space-between;
+		}
+		.active {
+			&::before {
+				content: "";
+				background-image: url(../img/svg/btn-close.svg);
+				width: rem(19);
+				height: rem(18);
+				position: absolute;
+				background-size: cover;
+			}
+		}
+	}
+	&__menu {
+		position: absolute;
+		@include media-breakpoint-up(md) {
+			top: rem(66);
+			left: rem(10);
+			height: rem(268);
+			width: rem(338);
+		}
+		top: 127px;
+		left: auto;
+		right: 0;
+		height: rem(268);
+		width: 100vw;
+		padding-top: rem(30);
+		padding-left: rem(54);
+		background-color: $danger;
+		display: none;
+	}
+	&__menu-toggle {
+		margin-right: rem(30);
+		position: relative;
+		height: rem(25);
+		width: rem(25);
+		cursor: pointer;
+		&::before {
+			content: "";
+			background-image: url(../img/svg/btn-toggle.svg);
+			width: rem(24);
+			height: rem(18);
+			position: absolute;
+			background-size: cover;
+		}
+	}
 }

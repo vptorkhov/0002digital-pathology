@@ -5,6 +5,11 @@
 	.container{
 		padding: 0;
 	}
+	picture{
+		@include media-breakpoint-up(md){
+			height: rem(268);
+		}
+	}
 }
 
 // end.headerBlock
