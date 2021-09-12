@@ -1,43 +1,83 @@
 .footer {
-		
+	@include media-breakpoint-down(lg) {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.main-row {
+		align-items: center;
+		min-height: rem(76);
+		@include media-breakpoint-down(lg) {
+			--bs-gutter-y: 15px;
+		}
+	}
 	margin-top: auto;
-
-// 
-@include media-breakpoint-up(xl) {}
-
-@include media-breakpoint-up(lg) {}
-
-@include media-breakpoint-up(md) {}
-
-@include media-breakpoint-up(sm) {}
-
-@include media-breakpoint-up(xs) {}
-
-
-// 
-@include media-breakpoint-between(md, xl) {}
-
-
-// 
-@include media-breakpoint-only(xs) {}
-
-@include media-breakpoint-only(sm) {}
-
-@include media-breakpoint-only(md) {}
-
-@include media-breakpoint-only(lg) {}
-
-@include media-breakpoint-only(xl) {}
-
-
-// 
-@include media-breakpoint-down(xl) {}
-
-@include media-breakpoint-down(lg) {}
-
-@include media-breakpoint-down(md) {}
-
-@include media-breakpoint-down(sm) {}
-
-@include media-breakpoint-down(xs) {}
+	width: 100%;
+	min-height: rem(76);
+	background-color: #d6d6d6;
+	.icon {
+		font-size: rem(47);
+	}
+	.link-row > * {
+		padding: 0;
+		@include media-breakpoint-up(xxl) {
+			margin-right: rem(27);
+		}
+		@include media-breakpoint-up(lg) {
+			margin-right: rem(15);
+		}
+	}
+	.icon {
+		@include media-breakpoint-down(lg) {
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+	}
+	.link-row {
+		@include media-breakpoint-down(lg){
+			--bs-gutter-y:9px;
+		}
+		.col-6{
+			&:nth-child(1){
+				@include media-breakpoint-down(lg){
+					order:0;
+				}
+			}
+			&:nth-child(2){
+				@include media-breakpoint-down(lg){
+					order:2;
+					a{
+						margin-left: -30px;
+					}
+				}
+			}
+			&:nth-child(3){
+				@include media-breakpoint-down(lg){
+					order:1;
+				}
+			}
+			&:nth-child(4){
+				@include media-breakpoint-down(lg){
+					order:3;
+					a{
+						margin-left: -16px;
+					}
+				}
+			}
+		}
+		a {
+			@include mt;
+			margin-right: rem(24);
+			color: $body-color;
+			text-decoration: none;
+			margin-right: 0;
+			@include media-breakpoint-down(lg){
+				display: block;
+				text-align: center;
+			}
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
 }

@@ -1,9 +1,16 @@
 mixin footer()
 	+b.FOOTER.footer
 		.container
-			.row
-				.col
-					
-				.col
-				.col
-				.col-auto
+			.row.main-row
+				.col-xl-6.col-lg-4.col-12
+					+icon('logo')
+				.col-xl-6.col-lg-8.col-12.pe-0
+					.row.link-row
+						.col-lg-auto.col-6
+							a(href="#") About training center
+						.col-lg-auto.col-6
+							a(href="#") Course content
+						.col-lg-auto.col-6
+							a(href="#") About the lecturers
+						.col-lg-auto.col-6
+							a(href="#") To take a course
