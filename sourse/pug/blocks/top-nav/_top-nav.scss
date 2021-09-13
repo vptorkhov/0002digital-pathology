@@ -28,12 +28,13 @@
 		@include media-breakpoint-up(md) {
 			max-width: rem(230);
 		}
+		border-bottom: 2px solid transparent;
 		margin-bottom: rem(7);
 		font-size: $large;
 		color: $white !important;
 		text-decoration: none;
 		&:hover {
-			text-decoration: underline;
+			border-color: $white;
 		}
 		&--mini {
 			font-size: rem(15);
@@ -112,13 +113,13 @@
 	}
 	&__menu {
 		position: absolute;
-		
+		z-index: 30;
 		@include media-breakpoint-up(md) {
 			height: rem(268);
 			width: rem(338);
 		}
 		@include media-breakpoint-down(md){
-			top: 127px;
+			top: 123px;
 		}
 		top:rem(77);
 		left: 0;
