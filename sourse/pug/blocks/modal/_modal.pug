@@ -5,8 +5,10 @@ mixin modal()
 		.h2 Этот сайт использует куки
 		p.modal-win__caption DPTC использует файлы cookie для персонализации контента, рекламы и&nbsp;анализа трафика. Мы&nbsp;также делимся информацией об&nbsp;посещении вами сайта с&nbsp;нашими партнерами по&nbsp;социальным сетям, рекламе и&nbsp;аналитике, которые могут совмещать его с&nbsp;другой информацией, которую вы&nbsp;им&nbsp;предоставили или которую они собрали при использовании вами их&nbsp;сервисами и&nbsp;услугами.<br /><br />Мы&nbsp;и&nbsp;наш партнеры используем следующую информацию:<br /><br /><span>&bull;</span> cookies и&nbsp;персональные данные<br /><span>&bull;</span> геолокацию<br /><span>&bull;</span> стандартную информацию для показа персонифицированной рекламы<br /><span>&bull;</span> анализ посещений, кликов на&nbsp;сайте, а&nbsp;также показ и&nbsp;клики рекламных модулей.<br /><br />Ваш выбор будет использован только для данного сайта.<br />Перед соглашением вы&nbsp;можете <a class="link-modal-js" href="#modal-info">почитать подробнее о&nbsp;cookies.</a>
 		+e.btn-wrap
-			+e.btn--first(type="button") Разрешить необходимые
-			+e.btn--second(type="button") Разрешить все cookies
+			+e.btn--first.btn-grey(type="button") Разрешить необходимые
+				span
+			+e.btn--second.btn-purple(type="button") Разрешить все cookies
+				span
 	// #modal-coolies
 	+b.modal-win.modal-win--big(id="modal-info" class=" " style="display: none" )
 		.h2 Cookie Policy
@@ -16,9 +18,10 @@ mixin modal()
 		.h2 Cookie settings
 		table 
 			thead
-				th File name
-				th Purpose
-				th Adjustability
+				tr
+					th File name
+					th Purpose
+					th Adjustability
 			tr
 				td.string(colspan="3") DPTC cookies
 			tr

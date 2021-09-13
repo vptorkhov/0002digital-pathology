@@ -3,14 +3,15 @@ mixin footer()
 		.container
 			.row.main-row
 				.col-xl-6.col-lg-4.col-12
-					+icon('logo')
+					a(href="/")
+						+icon('logo')
 				.col-xl-6.col-lg-8.col-12.pe-0
 					.row.link-row
 						.col-lg-auto.col-6
-							a(href="#") About training center
+							a(href="#sAbout") About training center
 						.col-lg-auto.col-6
-							a(href="#") Course content
+							a(href="#sCourse") Course content
 						.col-lg-auto.col-6
-							a(href="#") About the lecturers
+							a(href="#sLecturers") About the lecturers
 						.col-lg-auto.col-6
-							a(href="#") To take a course
+							a(href="#sInfo") To take a course

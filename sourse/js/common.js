@@ -305,6 +305,11 @@ function eventHandler() {
 			$('.top-nav__menu').slideToggle();
 		}
 	);
+	$('.top-nav__link').click(function(){
+			$('.top-nav__menu-toggle').toggleClass('active')
+			$('.top-nav__menu').slideToggle();
+		}
+	);
 
 	function setFixedNav() {
 		let topNav = document.querySelector('.top-nav  ');

@@ -65,8 +65,11 @@
 		height: 44px;
 		border-radius: $large;
 		border:0;
-		background-image: linear-gradient(-143deg, $primary 0%, $danger 100%);
 		color:white;
 		text-transform: uppercase;
+		@include media-breakpoint-down(md){
+			font-size: 14px;
+			border-radius: 20px;
+		}
 	}
 } // end.sForm

@@ -19,16 +19,18 @@ mixin top-nav()
 	+b.top-nav.block-with-lazy
 		.container--menu.container
 			+e.menu
-				+e.link(href="#") About training center
-				+e.link(href="#") Course content
+				+e.link(href="#sAbout") About training center
+				+e.link(href="#sCourse") Course content
 				+e.link--mini(href="#") Management Diagnostic
-				+e.link(href="#") About the lecturers:
-				+e.link(href="#") To take a course
+				+e.link(href="#sLecturers") About the lecturers:
+				+e.link(href="#sInfo") To take a course
 		.container
 			.row
 				+e.menu-wrap.col-sm-auto.col-12
 					+e.menu-toggle
-					+e.IMG.logo(alt="" src="img/svg/logo-color.svg")
+					a(href="/")
+						+e.IMG.logo(alt=" " src="img/svg/logo-color.svg")
 				.col-sm-auto.col-12.col-link
-					+e.menu-ask(href="#") To apply / to ask a question
+					+e.menu-ask.btn-purple(href="#") To apply / to ask a question
+						span
 	// end top-nav
