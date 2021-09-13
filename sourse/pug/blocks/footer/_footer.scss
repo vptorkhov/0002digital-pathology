@@ -3,6 +3,11 @@
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
+	&__logo{
+		.icon{
+			color:#666666;
+		}
+	}
 	.main-row {
 		align-items: center;
 		min-height: rem(76);
