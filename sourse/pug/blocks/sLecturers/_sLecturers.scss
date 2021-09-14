@@ -27,6 +27,14 @@
 		&:hover {
 			--cardcolor: #{$danger};
 			--svgcolor: #{$danger};
+			.pic{
+				&::before {
+					opacity: 0;
+				}
+				&::after {
+					opacity: 1;
+				}
+			}
 		}
 		.icon {
 			@include mt;
@@ -153,14 +161,6 @@
 	}
 	.pic {
 		position: relative;
-		&:hover {
-			&::before {
-				opacity: 0;
-			}
-			&::after {
-				opacity: 1;
-			}
-		}
 		&::before {
 			@include mt;
 			content: "";
